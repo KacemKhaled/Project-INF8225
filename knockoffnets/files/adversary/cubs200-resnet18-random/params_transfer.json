@@ -1,0 +1,11 @@
+{
+ "policy": "random",
+ "victim_model_dir": "models/victim/cubs200-resnet18",
+ "out_dir": "models/adversary/cubs200-resnet18-random",
+ "budget": 80000,
+ "queryset": "OpenImages",
+ "batch_size": 8,
+ "device_id": 0,
+ "nworkers": 10,
+ "created_on": "2020-04-26 16:51:36.141822"
+}
