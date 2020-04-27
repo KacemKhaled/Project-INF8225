@@ -1,0 +1,211 @@
+(tf-py27) mira@Miras-MacBook-Pro cleverhans_tutorials % python mnist_blackbox.py --data_aug 10
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:345: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From mnist_blackbox.py:323: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+/Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans_tutorials/__init__.py:24: UserWarning: It appears that you have at least two versions of cleverhans installed, one at /Users/mira/Google Drive/Documents (Universal)/School Work/2020/Hiver/INF8225/Project/cleverhans and one at /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages. You are running the tutorial script from the former but python imported the library module from the latter. This may cause errors, for example if the tutorial version is newer than the library version and attempts to call new features.
+  " call new features." % (cur_dir, ch_dir))
+WARNING:tensorflow:From mnist_blackbox.py:54: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+W0426 22:47:46.559680 4540235200 module_wrapper.py:139] From mnist_blackbox.py:54: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+WARNING:tensorflow:From mnist_blackbox.py:220: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+W0426 22:47:46.560080 4540235200 module_wrapper.py:139] From mnist_blackbox.py:220: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-04-26 22:47:46.560412: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-26 22:47:46.569754: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fc7faaf82d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-26 22:47:46.569768: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From mnist_blackbox.py:241: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0426 22:47:51.215543 4540235200 module_wrapper.py:139] From mnist_blackbox.py:241: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+Preparing the black-box model.
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:35: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0426 22:47:51.217787 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:35: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:35: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0426 22:47:51.217947 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:35: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:36: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0426 22:47:51.218194 4540235200 deprecation.py:323] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:36: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0426 22:47:51.219688 4540235200 deprecation.py:323] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/initializers.py:13: calling __init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0426 22:47:51.221956 4540235200 deprecation.py:506] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/initializers.py:13: calling __init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/initializers.py:21: The name tf.rsqrt is deprecated. Please use tf.math.rsqrt instead.
+
+W0426 22:47:51.222362 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/initializers.py:21: The name tf.rsqrt is deprecated. Please use tf.math.rsqrt instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/initializers.py:22: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+W0426 22:47:51.228377 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/initializers.py:22: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:40: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+W0426 22:47:51.266383 4540235200 deprecation.py:323] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:40: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:41: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0426 22:47:51.268224 4540235200 deprecation.py:323] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model_zoo/basic_cnn.py:41: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model.py:129: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+W0426 22:47:51.281939 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/model.py:129: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+Defined TensorFlow model graph.
+/Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:628: UserWarning: No GPUS, running on CPU
+  warnings.warn("No GPUS, running on CPU")
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/train.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0426 22:47:51.299963 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/train.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/compat.py:79: calling softmax_cross_entropy_with_logits_v2_helper (from tensorflow.python.ops.nn_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+dim is deprecated, use axis instead
+W0426 22:47:51.322298 4540235200 deprecation.py:506] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/compat.py:79: calling softmax_cross_entropy_with_logits_v2_helper (from tensorflow.python.ops.nn_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+dim is deprecated, use axis instead
+num_devices:  1
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:61: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0426 22:47:51.438380 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:61: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:64: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+W0426 22:47:51.438544 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:64: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:73: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+W0426 22:47:51.480408 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:73: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+[INFO 2020-04-26 22:48:10,787 cleverhans] Epoch 0 took 19.1342279911 seconds
+I0426 22:48:10.787375 4540235200 train.py:257] Epoch 0 took 19.1342279911 seconds
+[INFO 2020-04-26 22:48:30,604 cleverhans] Epoch 1 took 19.6988079548 seconds
+I0426 22:48:30.604403 4540235200 train.py:257] Epoch 1 took 19.6988079548 seconds
+[INFO 2020-04-26 22:48:50,684 cleverhans] Epoch 2 took 19.9586448669 seconds
+I0426 22:48:50.684600 4540235200 train.py:257] Epoch 2 took 19.9586448669 seconds
+[INFO 2020-04-26 22:49:10,796 cleverhans] Epoch 3 took 19.9877130985 seconds
+I0426 22:49:10.796190 4540235200 train.py:257] Epoch 3 took 19.9877130985 seconds
+[INFO 2020-04-26 22:49:30,717 cleverhans] Epoch 4 took 19.7997729778 seconds
+I0426 22:49:30.717566 4540235200 train.py:257] Epoch 4 took 19.7997729778 seconds
+[INFO 2020-04-26 22:49:50,291 cleverhans] Epoch 5 took 19.4543499947 seconds
+I0426 22:49:50.291807 4540235200 train.py:257] Epoch 5 took 19.4543499947 seconds
+[INFO 2020-04-26 22:50:09,923 cleverhans] Epoch 6 took 19.5119869709 seconds
+I0426 22:50:09.923156 4540235200 train.py:257] Epoch 6 took 19.5119869709 seconds
+[INFO 2020-04-26 22:50:29,450 cleverhans] Epoch 7 took 19.4087851048 seconds
+I0426 22:50:29.450730 4540235200 train.py:257] Epoch 7 took 19.4087851048 seconds
+[INFO 2020-04-26 22:50:50,672 cleverhans] Epoch 8 took 21.1021299362 seconds
+I0426 22:50:50.672919 4540235200 train.py:257] Epoch 8 took 21.1021299362 seconds
+[INFO 2020-04-26 22:51:15,439 cleverhans] Epoch 9 took 24.6484501362 seconds
+I0426 22:51:15.439883 4540235200 train.py:257] Epoch 9 took 24.6484501362 seconds
+Test accuracy of black-box on legitimate test examples: 0.993197969543
+Training the substitute model.
+Defined TensorFlow model graph for the substitute.
+Substitute training epoch #0
+num_devices:  1
+[INFO 2020-04-26 22:51:17,797 cleverhans] Epoch 0 took 0.113353013992 seconds
+I0426 22:51:17.797982 4540235200 train.py:257] Epoch 0 took 0.113353013992 seconds
+[INFO 2020-04-26 22:51:17,801 cleverhans] Epoch 1 took 0.00333690643311 seconds
+I0426 22:51:17.801898 4540235200 train.py:257] Epoch 1 took 0.00333690643311 seconds
+[INFO 2020-04-26 22:51:17,805 cleverhans] Epoch 2 took 0.0031270980835 seconds
+I0426 22:51:17.805453 4540235200 train.py:257] Epoch 2 took 0.0031270980835 seconds
+[INFO 2020-04-26 22:51:17,808 cleverhans] Epoch 3 took 0.00286483764648 seconds
+I0426 22:51:17.808746 4540235200 train.py:257] Epoch 3 took 0.00286483764648 seconds
+[INFO 2020-04-26 22:51:17,811 cleverhans] Epoch 4 took 0.00271701812744 seconds
+I0426 22:51:17.811886 4540235200 train.py:257] Epoch 4 took 0.00271701812744 seconds
+[INFO 2020-04-26 22:51:17,815 cleverhans] Epoch 5 took 0.00270915031433 seconds
+I0426 22:51:17.815015 4540235200 train.py:257] Epoch 5 took 0.00270915031433 seconds
+[INFO 2020-04-26 22:51:17,818 cleverhans] Epoch 6 took 0.00271487236023 seconds
+I0426 22:51:17.818150 4540235200 train.py:257] Epoch 6 took 0.00271487236023 seconds
+[INFO 2020-04-26 22:51:17,821 cleverhans] Epoch 7 took 0.00272107124329 seconds
+I0426 22:51:17.821289 4540235200 train.py:257] Epoch 7 took 0.00272107124329 seconds
+[INFO 2020-04-26 22:51:17,824 cleverhans] Epoch 8 took 0.00272107124329 seconds
+I0426 22:51:17.824434 4540235200 train.py:257] Epoch 8 took 0.00272107124329 seconds
+[INFO 2020-04-26 22:51:17,827 cleverhans] Epoch 9 took 0.00270891189575 seconds
+I0426 22:51:17.827559 4540235200 train.py:257] Epoch 9 took 0.00270891189575 seconds
+Augmenting substitute training data.
+Labeling substitute training data.
+/Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:298: UserWarning: batch_eval has moved to cleverhans.evaluation. batch_eval will be removed from utils_tf on or after 2019-03-09.
+  warnings.warn("batch_eval has moved to cleverhans.evaluation. "
+/Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/evaluation.py:443: UserWarning: `args` is deprecated and will be removed on or after 2019-03-09. Pass `batch_size` directly.
+  warnings.warn("`args` is deprecated and will be removed on or "
+Substitute training epoch #1
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #2
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #3
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #4
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #5
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #6
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #7
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+[DEBUG 2020-04-26 22:51:29,530 cleverhans] Batch 100
+I0426 22:51:29.530556 4540235200 evaluation.py:464] Batch 100
+Substitute training epoch #8
+num_devices:  1
+Augmenting substitute training data.
+Labeling substitute training data.
+[DEBUG 2020-04-26 22:51:40,404 cleverhans] Batch 100
+I0426 22:51:40.404139 4540235200 evaluation.py:464] Batch 100
+[DEBUG 2020-04-26 22:51:41,385 cleverhans] Batch 200
+I0426 22:51:41.385989 4540235200 evaluation.py:464] Batch 200
+Substitute training epoch #9
+num_devices:  1
+/Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/attacks_tf.py:27: UserWarning: attacks_tf is deprecated and will be removed on 2019-07-18 or after. Code should import functions from their new locations directly.
+  warnings.warn("attacks_tf is deprecated and will be removed on 2019-07-18"
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:749: The name tf.assert_greater_equal is deprecated. Please use tf.compat.v1.assert_greater_equal instead.
+
+W0426 22:51:42.641588 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:749: The name tf.assert_greater_equal is deprecated. Please use tf.compat.v1.assert_greater_equal instead.
+
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:740: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+W0426 22:51:42.651855 4540235200 module_wrapper.py:139] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/utils_tf.py:740: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+/Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/compat.py:22: UserWarning: <function reduce_max_v1 at 0x12de47cd0> is deprecated. Switch to calling the equivalent function in tensorflow.  This function was originally needed as a compatibility layer for old versions of tensorflow,  but support for those versions has now been dropped.
+  warnings.warn(str(f) + " is deprecated. Switch to calling the equivalent function in tensorflow. "
+WARNING:tensorflow:From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/attacks/attack.py:280: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0426 22:51:42.662154 4540235200 deprecation.py:323] From /Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/attacks/attack.py:280: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+/Users/mira/opt/anaconda3/envs/tf-py27/lib/python2.7/site-packages/cleverhans/compat.py:22: UserWarning: <function reduce_sum_v1 at 0x12de42c50> is deprecated. Switch to calling the equivalent function in tensorflow.  This function was originally needed as a compatibility layer for old versions of tensorflow,  but support for those versions has now been dropped.
+  warnings.warn(str(f) + " is deprecated. Switch to calling the equivalent function in tensorflow. "
+Test accuracy of oracle on adversarial examples generated using the substitute: 0.559390862944
