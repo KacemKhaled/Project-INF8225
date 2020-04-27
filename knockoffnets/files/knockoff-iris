@@ -1,0 +1,72 @@
+Testing started at 23:48 ...
+/home/kacem/anaconda3/envs/adversarial-robustness-toolbox/bin/python /home/kacem/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/201.6668.115/plugins/python/helpers/pycharm/_jb_pytest_runner.py --target test_knockoff_nets.py::TestKnockoffNetsVectors.test_keras_iris
+Launching pytest with arguments test_knockoff_nets.py::TestKnockoffNetsVectors::test_keras_iris in /media/kacem/2E86F7E186F7A80B/Users/KACEM/Desktop/KACEM/PolyMt/hiver20/INF8225/projet/forks/adversarial-robustness-toolbox/tests/attacks
+
+============================= test session starts ==============================
+platform linux -- Python 3.6.10, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- /home/kacem/anaconda3/envs/adversarial-robustness-toolbox/bin/python
+cachedir: .pytest_cache
+rootdir: /media/kacem/2E86F7E186F7A80B/Users/KACEM/Desktop/KACEM/PolyMt/hiver20/INF8225/projet/forks/adversarial-robustness-toolbox, inifile: setup.cfg
+collecting ... collected 1 item
+
+test_knockoff_nets.py::TestKnockoffNetsVectors::test_keras_iris 
+
+============================== 1 passed in 24.84s ==============================
+
+Process finished with exit code 0
+2020-04-26 23:51 [INFO] tests.utils: Setting random seed for TensorFlow.
+PASSED   [100%]
+
+
+----------------------------------------------------------------------
+Epoch 1/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.8909 - accuracy: 1.0000
+10/10 [==============================] - 0s 6ms/step - loss: 0.9409 - accuracy: 0.8900
+Epoch 2/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.8763 - accuracy: 1.0000
+10/10 [==============================] - 0s 4ms/step - loss: 0.9017 - accuracy: 0.9500
+Epoch 3/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.8674 - accuracy: 1.0000
+10/10 [==============================] - 0s 4ms/step - loss: 0.9119 - accuracy: 0.9100
+Epoch 4/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.9362 - accuracy: 0.9000
+10/10 [==============================] - 0s 5ms/step - loss: 0.8967 - accuracy: 0.9200
+Epoch 5/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.9672 - accuracy: 0.8000
+10/10 [==============================] - 0s 5ms/step - loss: 0.9024 - accuracy: 0.8800
+Epoch 6/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.8329 - accuracy: 1.0000
+10/10 [==============================] - 0s 5ms/step - loss: 0.8915 - accuracy: 0.8900
+Epoch 7/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.8121 - accuracy: 1.0000
+ 8/10 [=======================>......] - ETA: 0s - loss: 0.8864 - accuracy: 0.8875
+10/10 [==============================] - 0s 7ms/step - loss: 0.8819 - accuracy: 0.8900
+Epoch 8/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.8880 - accuracy: 0.9000
+ 8/10 [=======================>......] - ETA: 0s - loss: 0.8893 - accuracy: 0.8750
+10/10 [==============================] - 0s 8ms/step - loss: 0.8918 - accuracy: 0.8700
+Epoch 9/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.7802 - accuracy: 1.0000
+ 6/10 [=================>............] - ETA: 0s - loss: 0.8617 - accuracy: 0.8833
+10/10 [==============================] - 0s 11ms/step - loss: 0.8612 - accuracy: 0.8800
+Epoch 10/10
+
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.9307 - accuracy: 0.8000
+ 6/10 [=================>............] - ETA: 0s - loss: 0.8343 - accuracy: 0.9167
+10/10 [==============================] - 0s 13ms/step - loss: 0.8301 - accuracy: 0.9100
+2020-04-26 23:51 [INFO] tests.utils: Setting random seed for TensorFlow.
+2020-04-26 23:51:26.290422: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-04-26 23:51:27.217340: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 1995425000 Hz
+2020-04-26 23:51:27.248965: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558cdf4e6bd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-26 23:51:27.249059: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-04-26 23:51:27.359170: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-04-26 23:51 [INFO] tests.utils: TestKnockoffNetsVectors.test_keras_iris: completed in 15.905 seconds
+
